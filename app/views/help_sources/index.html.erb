@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<h1> The need </h1>
+<p class="need">People around age 18 lose access to valuable resources. This is a collaborative database to collect resources sourced anonymously.</p>
+
 <h1>Help Dashboard</h1>
 
 <table>
@@ -30,12 +33,13 @@
 
 <br>
 
-<%= link_to 'New Help Source', new_help_source_path %>
+<h1> <%= link_to 'Give us your two cents! Add something you think is helpful in a crisis here.', new_help_source_path %> </h1>
 
 <br>
 
 
-<h1> Fill out questionairre to get tailored advice </h1>
+<h1> Fill out anonymous questionairre to get tailored advice </h1>
+<h2> All fields optional </h2>
 <form onsubmit="(function(){checkResponseTime($('#zip').val()); checkOpioidPop($('#age').val()); return false;})(); return false;">
   <label for="zip">Enter Zip: </label>
   <input type="text" name="zip" id="zip">
@@ -50,3 +54,5 @@
 <br>
 <h1> Start your own support group! </h1>
 <h2> There were <span class="num" id="opioidNum"> click update </span> opioid prescriptions in the <span class="num" id="opioidAge"> click update </span> age group in Marin in December of 2016. Consider starting a support group! There will be people. </h2>
+<h1> Or find an existing one! List of locations:</h1>
+<h2> To be implemented. </h2>

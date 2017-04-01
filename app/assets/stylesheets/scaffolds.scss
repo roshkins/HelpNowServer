@@ -45,6 +45,34 @@ td {
   font-size: 18pt;
   line-height: 20pt;
 }
+@media (max-width:1000px) {
+  table, td, tr, th {
+    display: inline-block;
+    width:80%;
+    margin: 1em;
+    font-size: 9pt;
+  }
+  td {
+    margin: 0px;
+    font-size: 11pt;
+    line-height: 12pt;
+    width: 75%;
+  }
+  html, body {
+    line-height: 16pt;
+    font-size: 12pt;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
+  background: #d0e4f7; /* Old browsers */
+  background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+  }
+
+  h1, h2 {
+    line-height: 30pt;
+  }
+}
 
 div {
   &.field, &.actions {

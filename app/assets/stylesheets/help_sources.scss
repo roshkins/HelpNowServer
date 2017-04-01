@@ -10,3 +10,18 @@ table {
   background-color: rgba(75, 75, 255, .75);
   border-radius: 3px;
 }
+
+tr:nth-child(2n){
+  background-color: rgba(50, 50, 255, .75);
+}
+
+.num {
+  color: #00AA00;
+}
+
+.need {
+  background-color: rgba(75, 75, 255, .75);
+  border-radius: 3px;
+  padding: 1em;
+  font-size: 16pt;
+}
