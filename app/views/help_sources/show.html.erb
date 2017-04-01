@@ -16,8 +16,8 @@
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @help_source.website %>
+  <strong>Website:</strong>
+  <a href="<%= @help_source.website %>"><%= @help_source.website %></a>
 </p>
 
 <%= link_to 'Edit', edit_help_source_path(@help_source) %> |

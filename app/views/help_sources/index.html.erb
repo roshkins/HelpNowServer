@@ -19,7 +19,7 @@
         <td><%= help_source.help_name %></td>
         <td><a href="tel:<%= help_source.help_phone %>"><%= help_source.help_phone %></a></td>
         <td><%= help_source.description %></td>
-        <td><%= help_source.website %></td>
+        <td><a href="<%= help_source.website %>"><%= help_source.website %></a></td>
         <td><%= link_to 'Show', help_source %></td>
         <td><%= link_to 'Edit', edit_help_source_path(help_source) %></td>
         <td><%= link_to 'Destroy', help_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -31,3 +31,13 @@
 <br>
 
 <%= link_to 'New Help Source', new_help_source_path %>
+
+<br>
+
+<h1> Emergency response time in 2016 was at most <span id="time"> click update </span> minutes. </h1>
+
+<form onsubmit="checkResponseTime($('#zip').val()); return false;">
+  <label for="zip">Enter Zip: </label>
+  <input type="text" name="zip" id="zip">
+  <input type="submit" value="Update">
+</form>
