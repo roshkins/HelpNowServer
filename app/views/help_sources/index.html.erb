@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Help Sources</h1>
+<h1>Help Dashboard</h1>
 
 <table>
   <thead>
@@ -34,10 +34,19 @@
 
 <br>
 
-<h1> Emergency response time in 2016 was at most <span id="time"> click update </span> minutes. </h1>
 
-<form onsubmit="checkResponseTime($('#zip').val()); return false;">
+<h1> Fill out questionairre to get tailored advice </h1>
+<form onsubmit="(function(){checkResponseTime($('#zip').val()); checkOpioidPop($('#age').val()); return false;})(); return false;">
   <label for="zip">Enter Zip: </label>
   <input type="text" name="zip" id="zip">
+  <label for="age">Enter Age: </label>
+  <input type="text" name="age" id="age">
   <input type="submit" value="Update">
 </form>
+
+
+<h1> 911 response time in 2016 was on average <span class="num" id="time"> click update </span> minutes. </h1>
+<h2> In an emergency minutes seem like hours. This will help you set realistic expectations. </h2>
+<br>
+<h1> Start your own support group! </h1>
+<h2> There were <span class="num" id="opioidNum"> click update </span> opioid prescriptions in the <span class="num" id="opioidAge"> click update </span> age group in Marin in December of 2016. Consider starting a support group! There will be people. </h2>
