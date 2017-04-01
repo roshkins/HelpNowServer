@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Help Sources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Help name</th>
+      <th>Help phone</th>
+      <th>Description</th>
+      <th>website</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @help_sources.each do |help_source| %>
+      <tr>
+        <td><%= help_source.help_name %></td>
+        <td><a href="tel:<%= help_source.help_phone %>"><%= help_source.help_phone %></a></td>
+        <td><%= help_source.description %></td>
+        <td><%= help_source.website %></td>
+        <td><%= link_to 'Show', help_source %></td>
+        <td><%= link_to 'Edit', edit_help_source_path(help_source) %></td>
+        <td><%= link_to 'Destroy', help_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Help Source', new_help_source_path %>

@@ -1,0 +1,37 @@
+<%= form_for(help_source) do |f| %>
+  <% if help_source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(help_source.errors.count, "error") %> prohibited this help_source from being saved:</h2>
+
+      <ul>
+      <% help_source.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :help_name %>
+    <%= f.text_field :help_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :help_phone %>
+    <%= f.text_field :help_phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

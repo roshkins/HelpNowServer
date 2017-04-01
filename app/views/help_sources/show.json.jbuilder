@@ -1,0 +1,1 @@
+json.partial! "help_sources/help_source", help_source: @help_source

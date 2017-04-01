@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Help name:</strong>
+  <%= @help_source.help_name %>
+</p>
+
+<p>
+  <strong>Help phone:</strong>
+  <%= @help_source.help_phone %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @help_source.description %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @help_source.website %>
+</p>
+
+<%= link_to 'Edit', edit_help_source_path(@help_source) %> |
+<%= link_to 'Back', help_sources_path %>
