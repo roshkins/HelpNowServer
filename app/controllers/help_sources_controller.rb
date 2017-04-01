@@ -69,6 +69,6 @@ class HelpSourcesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def help_source_params
-      params.require(:help_source).permit(:help_name, :help_phone, :description)
+      params.require(:help_source).permit(:help_name, :help_phone, :description, :website)
     end
 end
